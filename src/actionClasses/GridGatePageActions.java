@@ -13,29 +13,32 @@ public class GridGatePageActions {
 		this.driver = driver;
 	}
 
-	public void launchGridGatePage(String string) {
-		driver.get(string);
-		System.out.println("User Launched URL: " + string);
-		
-	}
-
 	public void verifyGridGatePageLaunched() {
 		WebElement header = driver.findElement(By.xpath("//h1[text() = 'Grid Gate']"));
 		Assert.assertTrue(header.isDisplayed());
-		System.out.println("User is on grid gate page");	
+		System.out.println("User is on grid gate page");
 	}
 
-	public void verifyGreenBoxDisplayed() {
+	public void verifyBoxesAreDisplayed() {
 		WebElement greenBox = driver.findElement(By.xpath("//div[@class = 'greenbox']"));
 		Assert.assertTrue(greenBox.isDisplayed());
 		System.out.println("Green Box is displayed");
-	}
 
-	public void verifyRedBoxDisplayed() {
 		WebElement redBox = driver.findElement(By.xpath("//div[@class = 'redbox']"));
 		Assert.assertTrue(redBox.isDisplayed());
 		System.out.println("Red Box is displayed");
-		
 	}
 
+	public void clickGreenBox() {
+		driver.findElement(By.xpath("//div[@class = 'greenbox']")).click();
+		System.out.println("Greenbox is clicked");
+	}
+
+	public void verifyGreenBoxIsClicked(String expectedURL) {
+		String actualURLLaunched = driver.getCurrentUrl();
+		Assert.assertEquals(expectedURL, actualURLLaunched);
+		System.out.println("Green Box is clicked - Verified");
+		System.out.println("User Launched URL: " + actualURLLaunched);
+		System.out.println();
+	}
 }

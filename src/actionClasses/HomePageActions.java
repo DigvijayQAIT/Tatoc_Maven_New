@@ -32,10 +32,17 @@ public class HomePageActions {
 		System.out.println("Page Links are displayed");
 	}
 
-	public void verifyBasicCourseLinkClicked() {
-		WebElement basicCourseLink = driver.findElement(By.xpath("//a[text()='Basic Course']"));
-		basicCourseLink.click();
-		System.out.println("Basic Course link clicked");
+	public void clickBasicCourseLink() {
+		driver.findElement(By.xpath("//a[text()='Basic Course']")).click();
+		System.out.println("User Clicked Basic Course link");
+	}
+
+	public void verifyBasicCourseLinkClicked(String expectedURL) {
+		String actualURL = driver.getCurrentUrl();
+		Assert.assertEquals(expectedURL, actualURL);
+		System.out.println("Basic Course link is clicked - Verified");
+		System.out.println("User Launched URL: " + actualURL);
+		System.out.println();
 		
 	}
 }

@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3615" started-at="2018-06-22T13:10:47Z" finished-at="2018-06-22T13:10:51Z">
+  <suite name="Default suite" duration-ms="13936" started-at="2018-06-24T10:28:21Z" finished-at="2018-06-24T10:28:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3615" started-at="2018-06-22T13:10:47Z" finished-at="2018-06-22T13:10:51Z">
+    <test name="Default test" duration-ms="13936" started-at="2018-06-24T10:28:21Z" finished-at="2018-06-24T10:28:34Z">
       <class name="testClasses.TatocBasic">
-        <test-method status="PASS" signature="initVars()[pri:0, instance:testClasses.TatocBasic@6f7fd0e6]" name="initVars" is-config="true" duration-ms="2078" started-at="2018-06-22T13:10:47Z" finished-at="2018-06-22T13:10:49Z">
+        <test-method status="PASS" signature="initVars()[pri:0, instance:testClasses.TatocBasic@ae45eb6]" name="initVars" is-config="true" duration-ms="4063" started-at="2018-06-24T10:28:21Z" finished-at="2018-06-24T10:28:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initVars -->
-        <test-method status="PASS" signature="Step01_Launch_HomePage()[pri:0, instance:testClasses.TatocBasic@6f7fd0e6]" name="Step01_Launch_HomePage" duration-ms="949" started-at="2018-06-22T13:10:49Z" finished-at="2018-06-22T13:10:50Z">
+        <test-method status="PASS" signature="Step01_Launch_HomePage()[pri:0, instance:testClasses.TatocBasic@ae45eb6]" name="Step01_Launch_HomePage" duration-ms="1797" started-at="2018-06-24T10:28:25Z" finished-at="2018-06-24T10:28:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step01_Launch_HomePage -->
-        <test-method status="PASS" signature="Step02_Launch_GridGatePage()[pri:0, instance:testClasses.TatocBasic@6f7fd0e6]" name="Step02_Launch_GridGatePage" duration-ms="334" started-at="2018-06-22T13:10:50Z" depends-on-methods="testClasses.TatocBasic.Step01_Launch_HomePage" finished-at="2018-06-22T13:10:50Z">
+        <test-method status="PASS" signature="Step02_Launch_GridGatePage()[pri:0, instance:testClasses.TatocBasic@ae45eb6]" name="Step02_Launch_GridGatePage" duration-ms="770" started-at="2018-06-24T10:28:26Z" depends-on-methods="testClasses.TatocBasic.Step01_Launch_HomePage" finished-at="2018-06-24T10:28:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Step02_Launch_GridGatePage -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testClasses.TatocBasic@6f7fd0e6]" name="closeBrowser" is-config="true" duration-ms="204" started-at="2018-06-22T13:10:50Z" finished-at="2018-06-22T13:10:51Z">
+        <test-method status="PASS" signature="Step03_Launch_FrameDungeonPage()[pri:0, instance:testClasses.TatocBasic@ae45eb6]" name="Step03_Launch_FrameDungeonPage" duration-ms="3800" started-at="2018-06-24T10:28:27Z" depends-on-methods="testClasses.TatocBasic.Step02_Launch_GridGatePage" finished-at="2018-06-24T10:28:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step03_Launch_FrameDungeonPage -->
+        <test-method status="PASS" signature="Step04_Launch_DragAround()[pri:0, instance:testClasses.TatocBasic@ae45eb6]" name="Step04_Launch_DragAround" duration-ms="638" started-at="2018-06-24T10:28:31Z" depends-on-methods="testClasses.TatocBasic.Step03_Launch_FrameDungeonPage" finished-at="2018-06-24T10:28:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step04_Launch_DragAround -->
+        <test-method status="PASS" signature="Step05_Launch_PopupWindows()[pri:0, instance:testClasses.TatocBasic@ae45eb6]" name="Step05_Launch_PopupWindows" duration-ms="1914" started-at="2018-06-24T10:28:32Z" depends-on-methods="testClasses.TatocBasic.Step04_Launch_DragAround" finished-at="2018-06-24T10:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step05_Launch_PopupWindows -->
+        <test-method status="PASS" signature="Step06_Launch_CookieHandling()[pri:0, instance:testClasses.TatocBasic@ae45eb6]" name="Step06_Launch_CookieHandling" duration-ms="601" started-at="2018-06-24T10:28:34Z" depends-on-methods="testClasses.TatocBasic.Step05_Launch_PopupWindows" finished-at="2018-06-24T10:28:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Step06_Launch_CookieHandling -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:testClasses.TatocBasic@ae45eb6]" name="closeBrowser" is-config="true" duration-ms="303" started-at="2018-06-24T10:28:34Z" finished-at="2018-06-24T10:28:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
